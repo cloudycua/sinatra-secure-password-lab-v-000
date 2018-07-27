@@ -44,13 +44,13 @@ class ApplicationController < Sinatra::Base
     erb :account
   end
 
-  get "/failure" do
+  get '/failure' do
     erb :failure
   end
 
-  get "/logout" do
+  get '/logout' do
     session.clear
-    redirect "/"
+    redirect '/'
   end
 
   helpers do
