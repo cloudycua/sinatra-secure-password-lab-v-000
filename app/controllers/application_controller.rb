@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
       session[:user_id] = @user.id
       redirect to '/account'
     else
-      redirect to "/failure"
+      redirect to '/failure'
     end
   end
 
